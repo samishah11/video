@@ -1,3 +1,5 @@
+# HD to mp4 converter
+
 import cv2 as cv
 cap = cv.VideoCapture('tom.mp4')
 
