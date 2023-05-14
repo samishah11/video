@@ -1,0 +1,15 @@
+# Import library
+
+from pydub import AudioSegment
+
+# Load first audio file
+audio1 = AudioSegment.from_file("song1.mp3", format="mp3")
+
+# Load second audio file
+audio2 = AudioSegment.from_file("song2.mp3", format="mp3")
+
+# Merge the two audio files
+merged_audio = audio1 + audio2
+
+# Export the merged audio file
+merged_audio.export("merged_songs.mp3", format="mp3")
